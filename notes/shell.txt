@@ -19,6 +19,10 @@ Arrow Up and Arrow Down - shows the command history
 
 
 -------------------------------------
+HOW DO WE USE A GITHUB LINK TO THE CURRENT LESSON
+-------------------------------------
+$ cd to the course directory
+
 $ git clone https://github.com/fullstack-Ashquelon-Carmiel-2024/Web-2024-05-01-onclick-setTimeout-random.git
 - clones somebody's directory from github
 
