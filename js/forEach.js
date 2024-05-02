@@ -38,7 +38,24 @@ const foods = ['sushi','pasta','pizza','humburger','soup','cheese','apple']
  * 
  */
 
+drinks.forEach((item,index) => 
+    console.log(`${index+1}. ${item} and ${foods[index]}`));
 
+// We want to Capitalize each drink
 
+drinks.forEach((drink,idx) => {
 
+    drinks[idx] = drink[0].toUpperCase() + drink.slice(1).toLowerCase()
+    console.log(drink)
+
+})
+
+// drinks = [1,2,3] - causes error: Assignment to constant variable
+
+foods.forEach((food, idx, ar) => {
+
+    ar[idx] = food[0].toUpperCase() + food.slice(1).toLowerCase()
+    console.log(food)
+
+})
 
