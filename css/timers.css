@@ -2,13 +2,25 @@ body {
     font-size: 2rem;
 }
 
-.first {
+.container {
+    display: flex;
+}
+
+.first, .second {
     width: 300px;
     height: 175px;
     padding: 1rem;
-    background: purple;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.purple {
+    background: purple;
+    color: white;
+}
+
+.orange {
+    background: orangered;
+    color: lightskyblue;
 }

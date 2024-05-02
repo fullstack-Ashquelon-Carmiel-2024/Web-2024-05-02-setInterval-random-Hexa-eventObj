@@ -1,6 +1,9 @@
 const firstDiv = document.querySelector('.first');
 const btnShow = document.querySelector('#show');
 
+let sleepTime = 2500;
+
+
 btnShow.addEventListener('click', () => {
 
     firstDiv.innerText = "Just a minute ..."
@@ -14,8 +17,15 @@ btnShow.addEventListener('click', () => {
         // or
         // Windows + v
 
-    },3000)
+    },sleepTime)
 
     console.log('The timer is still running ...')
 
 })
+
+/** MISSION:
+ * Add listener to the second button.
+ * 
+ * When it clicked, it should change the color of the FIRST div
+ * to orange after the "sleepTime" is over
+ */
