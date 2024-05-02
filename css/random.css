@@ -1,0 +1,28 @@
+figure {
+    border: 2px solid salmon;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.2rem 1.2rem 1.2rem;
+    text-align: center;
+    vertical-align: top;
+}
+
+figure > h3 {
+    margin: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+figure > div {
+    min-height: 2rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+}
+
+figure > button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
