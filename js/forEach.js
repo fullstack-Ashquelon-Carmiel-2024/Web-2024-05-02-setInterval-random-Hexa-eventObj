@@ -27,4 +27,18 @@ nums1.forEach((num,idx) => {
 
 const nums2 = nums1.map((num,idx) => idx === 0 ? num : num/idx )
 
+const drinks = ['water','soda','cola','fanta','tea','coffee','wine']
+const foods = ['sushi','pasta','pizza','humburger','soup','cheese','apple']
+
+/** MISSION:
+ * Go over the array drinks with forEach and show the list like
+ * 1. water and sushi
+ * 2. soda and pasta
+ * 3. cola and pizza ...
+ * 
+ */
+
+
+
+
 
