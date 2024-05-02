@@ -1,7 +1,7 @@
 const firstDiv = document.querySelector('.first');
 const secondDiv = document.querySelector('.second');
 const btnStart = document.querySelector('#start');
-const btnStop = document.querySelector('#show');
+const btnStop = document.querySelector('#stop');
 const btnShow = document.querySelector('#show');
 const btnFirstColor = document.querySelector('#firstColor');
 
@@ -10,6 +10,8 @@ const halfHourglass = document.querySelector('.fa-hourglass-half');
 const endHourglass = document.querySelector('.fa-hourglass-end');
 
 let sleepTime = 2500;
+let timer1;
+
 /** MISSION
  * 
  * Add twice setTimeout() to the callback function
@@ -31,6 +33,18 @@ btnShow.addEventListener('click', () => {
         // EMOJISENSE
         // or
         // Windows + v
+        setTimeout(() => {
+
+            firstDiv.innerText += "😅"
+            
+            setTimeout(() => {
+                
+                firstDiv.innerText += "😠"
+
+            },sleepTime)
+
+        },sleepTime)
+
 
     },sleepTime)
 
@@ -52,12 +66,12 @@ btnFirstColor.addEventListener("click", () => {
     // לפעולות פשוטות יותר של 
     // JS
 
-    setTimeout(() => {
+    timer1 = setTimeout(() => {
 
         firstDiv.classList.replace('purple','orange');
         secondDiv.innerText += "First div already has changed color\n"
 
-    }, 0)
+    }, sleepTime*2)
 
     secondDiv.innerText += "First div is going to change color\n"
 
@@ -85,6 +99,19 @@ btnStart.addEventListener('click',() => {
 
 })
 
+btnStop.addEventListener('click', () => {
 
+    console.log(`${timer1} Stopped`)
+    secondDiv.innerText = 'Stopped!'
+    clearTimeout(timer1);
 
+})
 
+/** MISSION:
+ * Create variables timer2,timer3, timer4 for more timer IDs.
+ * 
+ * Get there the IDs of the timers that show EMOJEEs.
+ * 
+ * Stop them inside callback function of the new listener
+ * on btnStop "click" event
+ */
