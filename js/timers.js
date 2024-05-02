@@ -10,7 +10,14 @@ const halfHourglass = document.querySelector('.fa-hourglass-half');
 const endHourglass = document.querySelector('.fa-hourglass-end');
 
 let sleepTime = 2500;
-
+/** MISSION
+ * 
+ * Add twice setTimeout() to the callback function
+ * of the next listener to make one more emojee appeare
+ * next to the first after some time and then the third 
+ * emojee after some time
+ * 
+ */
 
 btnShow.addEventListener('click', () => {
 
