@@ -10,7 +10,7 @@ const halfHourglass = document.querySelector('.fa-hourglass-half');
 const endHourglass = document.querySelector('.fa-hourglass-end');
 
 let sleepTime = 2500;
-let timer1;
+let timer1,timer2,timer3,timer4;
 
 /** MISSION
  * 
@@ -27,17 +27,17 @@ btnShow.addEventListener('click', () => {
     
     
     // The timeout is in milliseconds
-    setTimeout(() => {
+    timer2 = setTimeout(() => {
         
         firstDiv.innerText = "😁"
         // EMOJISENSE
         // or
         // Windows + v
-        setTimeout(() => {
+        timer3 = setTimeout(() => {
 
             firstDiv.innerText += "😅"
             
-            setTimeout(() => {
+            timer4 = setTimeout(() => {
                 
                 firstDiv.innerText += "😠"
 
@@ -66,6 +66,7 @@ btnFirstColor.addEventListener("click", () => {
     // לפעולות פשוטות יותר של 
     // JS
 
+    // setTimeout() returns it's id, and we get it into timer1
     timer1 = setTimeout(() => {
 
         firstDiv.classList.replace('purple','orange');
@@ -104,7 +105,7 @@ btnStop.addEventListener('click', () => {
     console.log(`${timer1} Stopped`)
     secondDiv.innerText = 'Stopped!'
     clearTimeout(timer1);
-
+    
 })
 
 /** MISSION:
@@ -114,4 +115,13 @@ btnStop.addEventListener('click', () => {
  * 
  * Stop them inside callback function of the new listener
  * on btnStop "click" event
- */
+*/
+
+btnStop.addEventListener('click',() => {
+    
+    secondDiv.innerText = 'Emojees Stopped!'
+    clearTimeout(timer2);
+    clearTimeout(timer3);
+    clearTimeout(timer4);
+    
+})
